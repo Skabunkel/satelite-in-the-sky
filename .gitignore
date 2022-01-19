@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# bazel
+bazel-*/
+
 # Object files
 *.o
 *.ko
