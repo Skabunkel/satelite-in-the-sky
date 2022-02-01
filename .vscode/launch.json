@@ -10,7 +10,7 @@
       "request": "launch",
       "program": "${workspaceFolder}\\bazel-bin\\src\\rb-tree-null-and-singel-rotation-test.exe",
       "args": [],
-      "cwd": "${workspaceFolder}\\bazel-bin\\src\\rb-tree-null-and-singel-rotation-test.exe.runfiles\\__main__",
+      "cwd": "${workspaceFolder}\\bazel-bin\\src\\rb-tree-null-and-singel-rotation-test.exe.runfiles",
       "stopAtEntry": false,
       "environment": [],
       "externalConsole": false,
