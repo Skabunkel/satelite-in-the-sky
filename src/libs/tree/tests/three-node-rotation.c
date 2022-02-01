@@ -1,5 +1,5 @@
 #include <assert.h>
-#include <stdio.h>
+#include <stdlib.h>
 #include "../tree.h"
 
 const uint16_t address01 =  12;
@@ -26,6 +26,8 @@ int main(int argc, char** argv)
   firstLeftChild->color = NODE_BLACK;
 
   root->left = firstLeftChild;
+
+  // Yes i know this is broken i have not fixed it yet.
 
   assert(root->address == address01 && "Root is not correct after left rotation.");
   assert(root->color == NODE_BLACK && "Root color is not correct after left rotation.");
