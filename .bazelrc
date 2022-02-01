@@ -1,1 +1,1 @@
-build --compiler=mingw-gcc
+--repo_env=CC=clang

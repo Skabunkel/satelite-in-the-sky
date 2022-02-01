@@ -1,0 +1,62 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug rb-tree null and singel rotation test",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\bazel-bin\\src\\rb-tree-null-and-singel-rotation-test.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}\\bazel-bin\\src\\rb-tree-null-and-singel-rotation-test.exe.runfiles\\__main__",
+      "stopAtEntry": false,
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "miDebuggerPath": "C:\\Program Files\\LLVM\\bin\\lldb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Build null and zero test(debug)",
+      "sourceFileMap" : {"/proc/self/cwd/": "${workspaceFolder}"},
+    },
+    {
+      "name": "debug rb-tree two node rotation test",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\bazel-bin\\src\\rb-tree-two-node-rotation-test.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}\\bazel-bin\\src\\rb-tree-two-node-rotation-test.exe.runfiles",
+      "stopAtEntry": false,
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "miDebuggerPath": "C:\\Program Files\\LLVM\\bin\\lldb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Build two node rotation test(debug)",
+      "sourceFileMap" : {"/proc/self/cwd/": "${workspaceFolder}"},
+    }
+  ]
+}
